@@ -1,31 +1,394 @@
-<!doctype html>
-<html>
-	<head>
-		<title>Sciber</title>
-		<link rel="icon" href="favicon.ico">
-		<style>
-			html {
-				height: 100vh;
-			}
-			body {
-				min-height: 100vh;
-			}
-			.container {
-				height: 100vh;
-				min-height: 100vh;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			.banner{
-				max-height: 260px;
-				width: 100%
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<img src="banner.svg" alt="Brand Logo" class="banner">
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lanng="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sciber | Science optimizer</title>
+    <meta
+      name="description"
+      content="A startup developing framework and
+       software tools for optimization of scientific research and development
+       processes"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://sciber.github.io" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modal-fx.min.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <header id="home">
+      <div class="container">
+        <nav class="navbar is-transparent">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://sciber.github.io">
+              <img src="brand-logo.svg" alt="Sciber - brand logo" />
+            </a>
+            <div class="navbar-burger burger" data-target="navbarTransparent">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navbarTransparent" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item is-uppercase" href="#home">Home</a>
+              <a class="navbar-item is-uppercase" href="#mission">Mission</a>
+              <a class="navbar-item is-uppercase" href="#team">Team</a>
+              <a class="navbar-item is-uppercase" href="#contact">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero is-medium is-primary has-background is-bold">
+      <img
+        src="img/hero/curious-rodent-polygons.jpg"
+        alt="Curious rodent"
+        class="hero-background is-transparent"
+      />
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1 is-uppercase">Sciber</h1>
+          <h2 class="subtitle">
+            Intelligent tools for efficient research and development
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="intuition section">
+      <div class="container">
+        <div class="content">
+          <h5 class="title is-5 has-text-primary">
+            Why is it important for science to be effective?
+          </h5>
+          <p>
+            Primary outcome of quality scientific research is a product with
+            high added value with a potential to affect our daily lives.
+            Internet may be a good example how scientific discovery can change
+            world as was known before.
+          </p>
+          <p>
+            Countries with high standard of living and healthcare have something
+            in common - quality scientific research. As recent Covid-19
+            pandeminc shown, countries, where science is in the centre of
+            interest, were able to better handle such complex challenges when
+            comapred to countries which do not consider science as their
+            priority.
+          </p>
+          <p>
+            When facing climate changes, science should provide answers rather
+            than politics. Science produces reproducible verificable data, while
+            politics depends on individual ethical and moral principles which is
+            difficult to measure and standardize accross different cultures.
+          </p>
+          <p>
+            Effective science management helps to create and maintaine resource
+            and their efficient utilization for achieving desired scientific
+            outcomes. ludske kapacity a vedie k rychlejsiemu dosahovaniu
+            vysledkov.
+          </p>
+
+          <h5 class="title is-5 has-text-primary">
+            Ako dosiahnut efektivnu vedu?
+          </h5>
+          <p>
+            Vytvorenie rieseni, ktore su dostupne pre co najvacsii pocet
+            vyskumnikov v co najvacsom pocte vedeckych disciplin.
+          </p>
+          <p>
+            Kooperacia a vymena informacii medzi vedcami
+          </p>
+          <p>
+            Otvorene zdielanie vysledkov za sucasneho zabezpecenia ochrana ich
+            autorstva.
+          </p>
+          <p>
+            Vyuzitie pokrocilych IT pri navrhu experimentov, ich vyhodnocovani,
+            aplikovani sa na granty a vyhodnocovanie tch aplikacii.
+          </p>
+          <p>
+            Lepsia alokacia financnych zdrojov, vyuzitie ludskych zdrojov a
+            pristrojov.
+          </p>
+          <p>Ziskanim talentov.</p>
+
+          <!-- <p>
+            Superior scientific research can be source of wealth comparable to
+            owning oil or other precious natural resources.
+          </p>
+          <p>
+            Having quality research and development ensures country
+            participation in advanced scientific cooperation with other
+            countries, which is in turn again beneficial for its own science.
+          </p>
+          <p>
+            A country with better science can usually provide their citizens
+            with better healthcare system through more efficient safer drugs and
+          </p> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="section">
+      <div class="container">
+        <h2 class="title is-2">Our mission</h2>
+        <div class="content">
+          <p>
+            The main goal of this project to devise a framework and/or tools
+            which would make scientific processes more efficient and
+            participation in them more available. Sciber tries to achieve this
+            by finding a solutions which would satisfy following criteria:
+          </p>
+        </div>
+        <div class="columns">
+          <div class="column is-half">
+            <div class="feature has-text-centered">
+              <img src="img/features/circle-polygons.jpg" alt="A circle" />
+              <h4 class="title is-4">Simplicity</h4>
+              <p>
+                Simple solution is easier to create and therefore it represents
+                better starting goal for a development. Simple solution driven
+                by simple rules can still form complex systems and produce
+                sophisticated results. Also when available, simple solution is
+                expected be more accessible for the wider community.
+              </p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="feature has-text-centered">
+              <img
+                src="img/features/wheel-polygons.jpg"
+                alt="An abstract representation of a wheel"
+              />
+              <h4 class="title is-4">Universality</h4>
+              <p>
+                Improving common part of scientific process or providing a
+                scientific tool which is universally applicable would
+                potentially have more users and should have impact on bigger
+                number branches of science.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half">
+            <div class="feature has-text-centered">
+              <img
+                src="img/features/open-square-polygons.jpg"
+                alt="An open circle inside an open square"
+              />
+              <h4 class="title is-4">Openness</h4>
+              <p>
+                Solution should make the scientific process inclusive for
+                everyone who wants to participate. Making scientific processes
+                open for participation then leads to their higher efficiency and
+                effectiveness.
+              </p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="feature has-text-centered">
+              <img
+                src="img/features/fibonacci-spiral-polygons.jpg"
+                alt="Fibonacci spiral"
+              />
+              <h4 class="title is-4">Adaptability</h4>
+              <p>
+                Provided tool should be not only versatile but also flexible to
+                adapt to unknown needs in the future. The adaptability should be
+                the tool's intrinsic property, so that it would be from start
+                expected to be changed according any future requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <p>
+            To fulfill above mentioned criteria, final solution should be made
+            by combination of internet technologies with machine learning.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="container">
+        <h2 class="title is-2">Our team</h2>
+        <div class="content">
+          <p>
+            Sciber is a Dublin based startup established by Slavomíra Husarová
+            and Patrik Florek. Both its founders worked for several years as
+            investigators in scientific laboratories. After switching their
+            career paths to different directions they remain passionate
+            propagators of science and all the good stuff it generates.
+          </p>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div class="founder">
+              <img src="img/founders/Slavomira.jpg" alt="Slavomíra's photo" />
+              <h4 class="title is-4 has-text-centered">Slavomíra Husárová</h4>
+              <h5 class="subtitle has-text-centered">Founder and CEO</h5>
+              <p class="has-text-left">
+                Slavomíra studied microbes in clouds using nuclear magnetic
+                resonance spectroscopy and currently works as a clinical
+                research manager.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="founder">
+              <img src="img/founders/Patrik.jpg" alt="Patrik's photo" />
+              <h4 class="title is-4 has-text-centered">Patrik Florek</h4>
+              <h5 class="subtitle has-text-centered">Founder and CTO</h5>
+              <p class="has-text-left">
+                Patrik investigated bacterial death and these days is mostly
+                interested in machine learning, cellular automata and web
+                technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="title is-2">Contact us</h2>
+        <div class="content">
+          <p>
+            Are you interesting in learning more about this project? Send us a
+            message and we will be in touch very soon.
+          </p>
+          <div class="columns">
+            <div class="column is-full">
+              <form id="contactForm" class="form">
+                <div class="field">
+                  <label class="label" for="guestName">Your name</label>
+                  <div class="control">
+                    <input id="guestName" class="input" type="text" required />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label" for="guestContact">Your contact</label>
+                  <div class="control">
+                    <input
+                      id="guestContact"
+                      class="input"
+                      type="text"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label" for="guestMessage">Your message</label>
+                  <div class="control">
+                    <textarea
+                      id="guestMessage"
+                      class="textarea"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="field">
+                  <button class="button is-link" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-vcentered reverse-row-order-mobile">
+          <div class="column">
+            <div class="content">
+              <div class="copyright-wrapper">
+                <a href="https://sciber.github.io">
+                  <img src="brand-logo-white.svg" alt="Sciber - brand logo" />
+                </a>
+                <p>&copy; 2020 Sciber Ltd.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="menu">
+              <ul class="menu-list">
+                <p>
+                  <a class="is-uppercase has-text-centered-mobile" href="#home"
+                    >Home</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="is-uppercase has-text-centered-mobile"
+                    href="#mission"
+                    >Mission</a
+                  >
+                </p>
+                <p>
+                  <a class="is-uppercase has-text-centered-mobile" href="#team"
+                    >Team</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="is-uppercase has-text-centered-mobile"
+                    href="#contact"
+                    >Contact</a
+                  >
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="contactSuccessModal" class="modal">
+      <div class="modal-background" onclick="closeContactSuccessModal()"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Success</p>
+          <button
+            class="delete"
+            aria-label="close"
+            onclick="closeContactSuccessModal()"
+          ></button>
+        </header>
+        <section class="modal-card-body">
+          <p class="is-size-5 has-text-primary">
+            Thank you for getting in touch!
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button" onclick="closeContactSuccessModal()">
+            Close
+          </button>
+        </footer>
+      </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <!-- TODO: Implement cookies consent notification when using google analytics -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script> -->
+
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
 </html>

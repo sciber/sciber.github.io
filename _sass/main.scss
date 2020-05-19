@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+$family-sans-serif: "Ubuntu", "Helvetica", "Arial", sans-serif;
+$body-size: 18px;
+
+$pink: #ff80b2;
+$razzmatazz: #dc0057;
+
+$primary: $razzmatazz;
+$link: $pink;
+$title-color: $primary;
+
+$menu-item-color: $pink;
+$menu-item-hover-color: $pink;
+
+@import "../node_modules/bulma/bulma";
+
+@media screen and (max-width: 768px) {
+  .reverse-row-order-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    & {
+      scroll-behavior: auto;
+    }
+  }
+
+  &,
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.navbar {
+  min-height: 6.5rem;
+
+  .navbar-brand {
+    min-height: 6.5rem;
+
+    img {
+      min-height: 4.5rem;
+    }
+  }
+
+  .navbar-item {
+    text-align: center;
+  }
+}
+
+.hero {
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: right center;
+    width: 100%;
+    height: 100%;
+
+    &.is-transparent {
+      opacity: 0.3;
+    }
+  }
+}
+
+.intuition {
+  .title {
+    margin: 1rem 0;
+  }
+
+  p {
+    margin: 0 0;
+
+    & + .title {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.feature {
+  padding: 1rem;
+  background-color: $primary;
+  height: 100%;
+
+  img {
+    max-width: 10rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto 3rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+  }
+
+  h4.title {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 1rem 1rem;
+    text-align: left;
+  }
+}
+
+.founder {
+  padding: 0 1rem;
+  img {
+    max-width: 20rem;
+    width: 100%;
+    height: auto;
+    border: 0.2rem solid $primary;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto 2.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  }
+}
+
+.footer {
+  margin-top: auto;
+  color: $white;
+  background-color: $primary;
+
+  .copyright-wrapper {
+    img {
+      display: block;
+      margin: 1rem auto;
+      width: 4rem;
+      height: 4rem;
+    }
+
+    p {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
