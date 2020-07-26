@@ -18,7 +18,7 @@ $menu-item-hover-color: $pink;
 @import "../node_modules/bulma/bulma";
 
 @media screen and (max-width: 768px) {
-  .reverse-row-order-mobile {
+  .column-reversed-mobile {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -76,17 +76,20 @@ html {
   }
 }
 
-.intuition {
-  .title {
-    margin: 1rem 0;
+#intuition {
+  margin-top: 3rem;
+  background-color: $primary;
+
+  #how {
+    margin-top: 3rem;
+  }
+
+  h4.title {
+    color: rgba(255, 255, 255, 0.9);
   }
 
   p {
-    margin: 0 0;
-
-    & + .title {
-      margin-top: 3rem;
-    }
+    color: rgba(255, 255, 255, 0.9);
   }
 }
 

@@ -6957,7 +6957,7 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 @media screen and (max-width: 768px) {
-  .reverse-row-order-mobile {
+  .column-reversed-mobile {
     display: flex;
     flex-direction: column-reverse; } }
 
@@ -6994,13 +6994,15 @@ html {
   .hero-background.is-transparent {
     opacity: 0.3; }
 
-.intuition .title {
-  margin: 1rem 0; }
-
-.intuition p {
-  margin: 0 0; }
-  .intuition p + .title {
+#intuition {
+  margin-top: 3rem;
+  background-color: #dc0057; }
+  #intuition #how {
     margin-top: 3rem; }
+  #intuition h4.title {
+    color: rgba(255, 255, 255, 0.9); }
+  #intuition p {
+    color: rgba(255, 255, 255, 0.9); }
 
 .feature {
   padding: 1rem;
