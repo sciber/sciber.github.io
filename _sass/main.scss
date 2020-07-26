@@ -7,8 +7,10 @@ $body-size: 18px;
 
 $pink: #ff80b2;
 $razzmatazz: #dc0057;
+$razzmatazz-dark: #bb1854;
 
 $primary: $razzmatazz;
+$primary-dark: $razzmatazz-dark;
 $link: $pink;
 $title-color: $primary;
 
@@ -78,7 +80,7 @@ html {
 
 #intuition {
   margin-top: 3rem;
-  background-color: $primary;
+  background-color: $primary-dark;
 
   #how {
     margin-top: 3rem;
